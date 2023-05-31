@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160dip"
+        android:orientation="horizontal"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0.0dip"
+            android:layout_height="160dip"
+            android:layout_margin="3dip"
+            android:layout_weight="1.0"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pc_loading_fali" />
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="0.0dip"
+            android:layout_height="160dip"
+            android:layout_margin="3dip"
+            android:layout_weight="1.0"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginTop="10dip"
+        android:lineSpacingExtra="10dip"
+        android:textColor="@color/gray12"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/gray1"
+            android:dividerHeight="1px"
+            android:focusable="true" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/bottom_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/gray1"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/etBody"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/sms_edit_lxrbg"
+                android:gravity="left|center_vertical"
+                android:hint="输入评论内容"
+                android:maxEms="70"
+                android:maxLines="4"
+                android:padding="5dip" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="60dip"
+                android:layout_height="42dip"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/btn_send_bg"
+                android:text="评论"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

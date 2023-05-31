@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dip"
+                android:text="    该软件的功能是向用户介绍中国的八大菜系。其主要的是展示各菜系的菜品的做法。其亮点是每个菜品的做法展示都是都过视频形式放在该软件上。用户可以通过视频，学习各大菜系的菜品做法。视频形式直接明了，使用户能够更加直观，更加清晰地学习菜品的做法。本课题做的这个全国各地名吃服务系统，其虽然是文字介绍做法，但较八大菜系，其有其较优的地方。如这个系统提供给用户做各种菜系的名饭店，这使得用户可以知道那些地方能够吃到地道的菜系。在用户亲身品尝后，其会更有选择和感性的学习菜品的做法。"
+                android:textColor="@color/gray12"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

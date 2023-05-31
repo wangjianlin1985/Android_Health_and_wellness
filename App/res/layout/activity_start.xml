@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_top_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="10dip"
+            android:text="    首次使用需要配置服务端IP地址+端口号,如果当前是采用模拟器测试,IP地址保持默认(10.0.2.2:8080)即可"
+            android:textColor="@color/gray12"
+            android:textSize="18sp" />
+
+        <EditText
+             android:id="@+id/etIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="10.0.2.2:8080" 
+            android:singleLine="true"
+            android:inputType="text"
+            android:textColor="@color/gray16"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/btn_comm_selector"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
